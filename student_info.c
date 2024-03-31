@@ -7,7 +7,13 @@ void student_info(char name[2][100],char srn[2][100],int sem[])
 	printf("Enter number of students for marks entry");
 	scanf("%d",&w);
 	
+	if(w>10)
+	{
+		printf("Maximum limit of 10 students exceeded.Try again.\n");
+	}
 
+    else
+	{
     printf("Enter Student Names:\n");
     for(int i=0;i<w;i++)
     {
@@ -25,4 +31,5 @@ void student_info(char name[2][100],char srn[2][100],int sem[])
     {
         scanf("%d",&sem[i]);
     }
+	}
 }
