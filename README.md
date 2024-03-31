@@ -1,3 +1,3 @@
 # PSWC-case-study
 
-A simple code for recording marks of students and displaying a grade card.
+A C code for entering and recording marks of students and displaying a grade card.
