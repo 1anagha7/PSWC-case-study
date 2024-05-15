@@ -70,6 +70,5 @@ void editdata(struct Student *students, int numStudents) {
             printf("Invalid choice\n");
     }
 
-    // Update the StudentData.txt file with the modified information
     savestudentdata(students, numStudents);
 }
