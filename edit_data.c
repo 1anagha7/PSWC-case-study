@@ -23,7 +23,7 @@ void editdata(struct Student *students, int numStudents) {
     printf("Enter your choice: ");
     scanf("%d", &choice);
 
-    // Adjust index for array access
+    
     int index = studentNumber - 1;
 
     switch(choice) {
@@ -37,7 +37,7 @@ void editdata(struct Student *students, int numStudents) {
             break;
         }
         case 2: {
-            // Edit SRN
+            
             char newSRN[100];
             printf("Enter the new SRN: ");
             scanf("%s", newSRN);
@@ -46,7 +46,7 @@ void editdata(struct Student *students, int numStudents) {
             break;
         }
         case 3: {
-            // Edit marks
+            
             printf("Enter the new marks for ISA1 in the order of: Physics C Math  Electrical  Mechanical  EVS (ALL OUT OF 40)\n");
             for (int j = 0; j < 6; j++) {
                 scanf("%d", &students[index].isa1[j]);
@@ -62,7 +62,6 @@ void editdata(struct Student *students, int numStudents) {
                 scanf("%d", &students[index].esa[j]);
             }
 
-            // Update total marks and grades
             calc_grade(&students[index],numStudents);
             printf("Marks updated successfully.\n");
             break;
